@@ -9,7 +9,7 @@ with open(txtMatrix, 'r') as file:
 qntMatrix = matTxt.count('\n')+1
 matList = np.split(allMatrix, qntMatrix)
 
-with open(txtRel, 'w+') as rel:
+with open(txtRel, 'w') as rel:
     j = 1
     for i in matList:
         if j != 1:
